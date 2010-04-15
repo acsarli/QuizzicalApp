@@ -18,7 +18,7 @@
 
 #import "XMAppDelegate.h"
 #import "XMArgumentKeys.h"
-
+#import "PFMoveApplication.h"
 
 @interface XMAppDelegate (Private)
 
@@ -62,5 +62,14 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registrationChanged:) name:XMDidChangeRegistrationNotification object:nil];	
 }
 
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
+{
+	// Offer to the move the Application if necessary.
+	// Note that if the user chooses to move the application,
+	// this call will never return. Therefore you can suppress
+	// any first run UI by putting it after this call.
+	
+	PFMoveToApplicationsFolderIfNecessary();
+}
 
 @end
