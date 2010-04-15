@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D60A6FF1174D9AB0006CA7F /* XMAppDelegate+Licensing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6E21174D9AB0006CA7F /* XMAppDelegate+Licensing.m */; };
+		0D60A7001174D9AB0006CA7F /* XMLicensingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6E41174D9AB0006CA7F /* XMLicensingWindowController.m */; };
+		0D60A7051174D9AB0006CA7F /* CFobLicGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6ED1174D9AB0006CA7F /* CFobLicGenerator.m */; };
+		0D60A7061174D9AB0006CA7F /* CFobLicVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6EF1174D9AB0006CA7F /* CFobLicVerifier.m */; };
+		0D60A7071174D9AB0006CA7F /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6F01174D9AB0006CA7F /* decoder.c */; };
+		0D60A7081174D9AB0006CA7F /* encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6F21174D9AB0006CA7F /* encoder.c */; };
+		0D60A7091174D9AB0006CA7F /* NSData+PECrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6F51174D9AB0006CA7F /* NSData+PECrypt.m */; };
+		0D60A70A1174D9AB0006CA7F /* NSString+PECrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6F71174D9AB0006CA7F /* NSString+PECrypt.m */; };
+		0D60A70B1174D9AB0006CA7F /* NSString-Base64Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6F91174D9AB0006CA7F /* NSString-Base64Extensions.m */; };
+		0D60A70C1174D9AB0006CA7F /* URLCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6FB1174D9AB0006CA7F /* URLCommand.m */; };
+		0D60A70D1174D9AB0006CA7F /* MSZLinkedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A6FE1174D9AB0006CA7F /* MSZLinkedView.m */; };
+		0D60A7351174E28C0006CA7F /* XMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D60A7341174E28C0006CA7F /* XMAppDelegate.m */; };
+		0D97AA62117556AC00011518 /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D97AA61117556AC00011518 /* libcrypto.0.9.7.dylib */; };
+		0D97AA781175577400011518 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D97AA771175577400011518 /* QuartzCore.framework */; };
+		0D97AAF01175E39300011518 /* Licensing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D97AAEF1175E39300011518 /* Licensing.xib */; };
+		0D97AAF21175E3A100011518 /* CodeFabExample_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97AAF11175E3A100011518 /* CodeFabExample_splash.png */; };
+		0D97AB271176785100011518 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97AB261176785100011518 /* PFMoveApplication.m */; };
+		0D97AB2B117678CE00011518 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D97AB2A117678CE00011518 /* Security.framework */; };
+		0D97AB8D11773A7400011518 /* SoftLanding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D97AB8C11773A7400011518 /* SoftLanding.xib */; };
 		0DAAD34E115F86D1000466D1 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAAD34D115F86D1000466D1 /* BWToolkitFramework.framework */; };
 		0DAAD37F115F86E1000466D1 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0DAAD34D115F86D1000466D1 /* BWToolkitFramework.framework */; };
 		0DAAD39D115F9810000466D1 /* NotePad.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAD39C115F9810000466D1 /* NotePad.icns */; };
@@ -38,6 +57,38 @@
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D60A6E21174D9AB0006CA7F /* XMAppDelegate+Licensing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMAppDelegate+Licensing.m"; sourceTree = "<group>"; };
+		0D60A6E31174D9AB0006CA7F /* XMLicensingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLicensingWindowController.h; sourceTree = "<group>"; };
+		0D60A6E41174D9AB0006CA7F /* XMLicensingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLicensingWindowController.m; sourceTree = "<group>"; };
+		0D60A6E51174D9AB0006CA7F /* XMArgumentKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMArgumentKeys.h; sourceTree = "<group>"; };
+		0D60A6EC1174D9AB0006CA7F /* CFobLicGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFobLicGenerator.h; sourceTree = "<group>"; };
+		0D60A6ED1174D9AB0006CA7F /* CFobLicGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFobLicGenerator.m; sourceTree = "<group>"; };
+		0D60A6EE1174D9AB0006CA7F /* CFobLicVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFobLicVerifier.h; sourceTree = "<group>"; };
+		0D60A6EF1174D9AB0006CA7F /* CFobLicVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFobLicVerifier.m; sourceTree = "<group>"; };
+		0D60A6F01174D9AB0006CA7F /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
+		0D60A6F11174D9AB0006CA7F /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
+		0D60A6F21174D9AB0006CA7F /* encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoder.c; sourceTree = "<group>"; };
+		0D60A6F31174D9AB0006CA7F /* encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoder.h; sourceTree = "<group>"; };
+		0D60A6F41174D9AB0006CA7F /* NSData+PECrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PECrypt.h"; sourceTree = "<group>"; };
+		0D60A6F51174D9AB0006CA7F /* NSData+PECrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PECrypt.m"; sourceTree = "<group>"; };
+		0D60A6F61174D9AB0006CA7F /* NSString+PECrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PECrypt.h"; sourceTree = "<group>"; };
+		0D60A6F71174D9AB0006CA7F /* NSString+PECrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PECrypt.m"; sourceTree = "<group>"; };
+		0D60A6F81174D9AB0006CA7F /* NSString-Base64Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Base64Extensions.h"; sourceTree = "<group>"; };
+		0D60A6F91174D9AB0006CA7F /* NSString-Base64Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Base64Extensions.m"; sourceTree = "<group>"; };
+		0D60A6FA1174D9AB0006CA7F /* URLCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCommand.h; sourceTree = "<group>"; };
+		0D60A6FB1174D9AB0006CA7F /* URLCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCommand.m; sourceTree = "<group>"; };
+		0D60A6FD1174D9AB0006CA7F /* MSZLinkedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSZLinkedView.h; sourceTree = "<group>"; };
+		0D60A6FE1174D9AB0006CA7F /* MSZLinkedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSZLinkedView.m; sourceTree = "<group>"; };
+		0D60A7331174E28C0006CA7F /* XMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMAppDelegate.h; sourceTree = "<group>"; };
+		0D60A7341174E28C0006CA7F /* XMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMAppDelegate.m; sourceTree = "<group>"; };
+		0D97AA61117556AC00011518 /* libcrypto.0.9.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.7.dylib; path = usr/lib/libcrypto.0.9.7.dylib; sourceTree = SDKROOT; };
+		0D97AA771175577400011518 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		0D97AAEF1175E39300011518 /* Licensing.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Licensing.xib; sourceTree = "<group>"; };
+		0D97AAF11175E3A100011518 /* CodeFabExample_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CodeFabExample_splash.png; sourceTree = "<group>"; };
+		0D97AB251176785100011518 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		0D97AB261176785100011518 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+		0D97AB2A117678CE00011518 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0D97AB8C11773A7400011518 /* SoftLanding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoftLanding.xib; sourceTree = "<group>"; };
 		0DAAD34D115F86D1000466D1 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BWToolkitFramework.framework; sourceTree = "<group>"; };
 		0DAAD39C115F9810000466D1 /* NotePad.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NotePad.icns; sourceTree = "<group>"; };
 		0DAAD3A4115F9C81000466D1 /* LQQuizzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQQuizzer.h; sourceTree = "<group>"; };
@@ -68,16 +119,66 @@
 			files = (
 				775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */,
 				0DAAD34E115F86D1000466D1 /* BWToolkitFramework.framework in Frameworks */,
+				0D97AA62117556AC00011518 /* libcrypto.0.9.7.dylib in Frameworks */,
+				0D97AA781175577400011518 /* QuartzCore.framework in Frameworks */,
+				0D97AB2B117678CE00011518 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D60A6E11174D9AB0006CA7F /* XMLicensing */ = {
+			isa = PBXGroup;
+			children = (
+				0D60A6FC1174D9AB0006CA7F /* MSZLinkedView */,
+				0D60A6E21174D9AB0006CA7F /* XMAppDelegate+Licensing.m */,
+				0D60A6E31174D9AB0006CA7F /* XMLicensingWindowController.h */,
+				0D60A6E41174D9AB0006CA7F /* XMLicensingWindowController.m */,
+				0D60A6E51174D9AB0006CA7F /* XMArgumentKeys.h */,
+				0D60A6EB1174D9AB0006CA7F /* objc */,
+			);
+			name = XMLicensing;
+			sourceTree = "<group>";
+		};
+		0D60A6EB1174D9AB0006CA7F /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				0D60A6EC1174D9AB0006CA7F /* CFobLicGenerator.h */,
+				0D60A6ED1174D9AB0006CA7F /* CFobLicGenerator.m */,
+				0D60A6EE1174D9AB0006CA7F /* CFobLicVerifier.h */,
+				0D60A6EF1174D9AB0006CA7F /* CFobLicVerifier.m */,
+				0D60A6F01174D9AB0006CA7F /* decoder.c */,
+				0D60A6F11174D9AB0006CA7F /* decoder.h */,
+				0D60A6F21174D9AB0006CA7F /* encoder.c */,
+				0D60A6F31174D9AB0006CA7F /* encoder.h */,
+				0D60A6F41174D9AB0006CA7F /* NSData+PECrypt.h */,
+				0D60A6F51174D9AB0006CA7F /* NSData+PECrypt.m */,
+				0D60A6F61174D9AB0006CA7F /* NSString+PECrypt.h */,
+				0D60A6F71174D9AB0006CA7F /* NSString+PECrypt.m */,
+				0D60A6F81174D9AB0006CA7F /* NSString-Base64Extensions.h */,
+				0D60A6F91174D9AB0006CA7F /* NSString-Base64Extensions.m */,
+				0D60A6FA1174D9AB0006CA7F /* URLCommand.h */,
+				0D60A6FB1174D9AB0006CA7F /* URLCommand.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		0D60A6FC1174D9AB0006CA7F /* MSZLinkedView */ = {
+			isa = PBXGroup;
+			children = (
+				0D60A6FD1174D9AB0006CA7F /* MSZLinkedView.h */,
+				0D60A6FE1174D9AB0006CA7F /* MSZLinkedView.m */,
+			);
+			name = MSZLinkedView;
+			sourceTree = "<group>";
+		};
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D97AA771175577400011518 /* QuartzCore.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				0D97AB2A117678CE00011518 /* Security.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -117,6 +218,11 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0D97AB251176785100011518 /* PFMoveApplication.h */,
+				0D97AB261176785100011518 /* PFMoveApplication.m */,
+				0D60A7331174E28C0006CA7F /* XMAppDelegate.h */,
+				0D60A7341174E28C0006CA7F /* XMAppDelegate.m */,
+				0D60A6E11174D9AB0006CA7F /* XMLicensing */,
 				EE136B5C11072D67009767E9 /* LQArrayController.h */,
 				EE136B5D11072D67009767E9 /* LQArrayController.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
@@ -139,6 +245,9 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0D97AB8C11773A7400011518 /* SoftLanding.xib */,
+				0D97AAF11175E3A100011518 /* CodeFabExample_splash.png */,
+				0D97AAEF1175E39300011518 /* Licensing.xib */,
 				0DAAD3A7115FB03D000466D1 /* Quiz.xib */,
 				0DAAD39C115F9810000466D1 /* NotePad.icns */,
 				2F7446A70DB6BCF400F9684A /* MainMenu.xib */,
@@ -155,6 +264,7 @@
 			children = (
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+				0D97AA61117556AC00011518 /* libcrypto.0.9.7.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +327,9 @@
 				2F7446AC0DB6BCF400F9684A /* MyDocument.xib in Resources */,
 				0DAAD39D115F9810000466D1 /* NotePad.icns in Resources */,
 				0DAAD3A8115FB03D000466D1 /* Quiz.xib in Resources */,
+				0D97AAF01175E39300011518 /* Licensing.xib in Resources */,
+				0D97AAF21175E3A100011518 /* CodeFabExample_splash.png in Resources */,
+				0D97AB8D11773A7400011518 /* SoftLanding.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +345,19 @@
 				775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */,
 				EE136B5E11072D67009767E9 /* LQArrayController.m in Sources */,
 				0DAAD3A6115F9C81000466D1 /* LQQuizzer.m in Sources */,
+				0D60A6FF1174D9AB0006CA7F /* XMAppDelegate+Licensing.m in Sources */,
+				0D60A7001174D9AB0006CA7F /* XMLicensingWindowController.m in Sources */,
+				0D60A7051174D9AB0006CA7F /* CFobLicGenerator.m in Sources */,
+				0D60A7061174D9AB0006CA7F /* CFobLicVerifier.m in Sources */,
+				0D60A7071174D9AB0006CA7F /* decoder.c in Sources */,
+				0D60A7081174D9AB0006CA7F /* encoder.c in Sources */,
+				0D60A7091174D9AB0006CA7F /* NSData+PECrypt.m in Sources */,
+				0D60A70A1174D9AB0006CA7F /* NSString+PECrypt.m in Sources */,
+				0D60A70B1174D9AB0006CA7F /* NSString-Base64Extensions.m in Sources */,
+				0D60A70C1174D9AB0006CA7F /* URLCommand.m in Sources */,
+				0D60A70D1174D9AB0006CA7F /* MSZLinkedView.m in Sources */,
+				0D60A7351174E28C0006CA7F /* XMAppDelegate.m in Sources */,
+				0D97AB271176785100011518 /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +406,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/../../../Users/adriansarli/Documents/Mac Software/LittleQuizzer\"",
+					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/LittleQuizzer\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -292,6 +418,10 @@
 				GCC_PREFIX_HEADER = LittleQuizzer_Prefix.pch;
 				INFOPLIST_FILE = "LittleQuizzer-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = LittleQuizzer;
 				WRAPPER_EXTENSION = app;
 			};
@@ -303,7 +433,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/../../../Users/adriansarli/Documents/Mac Software/LittleQuizzer\"",
+					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/LittleQuizzer\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -312,6 +442,10 @@
 				GCC_PREFIX_HEADER = LittleQuizzer_Prefix.pch;
 				INFOPLIST_FILE = "LittleQuizzer-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = LittleQuizzer;
 				WRAPPER_EXTENSION = app;
 			};
@@ -326,7 +460,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Debug;
 		};
@@ -338,7 +472,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};

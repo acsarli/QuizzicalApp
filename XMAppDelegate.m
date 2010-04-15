@@ -36,6 +36,7 @@
 		
 		[self registerForNotifications];
 		[self launchCheck];
+		PFMoveToApplicationsFolderIfNecessary();
 	}
 	
 	return self;
@@ -69,7 +70,6 @@
 	// this call will never return. Therefore you can suppress
 	// any first run UI by putting it after this call.
 	
-	PFMoveToApplicationsFolderIfNecessary();
 }
 
 @end

@@ -26,7 +26,21 @@
 	 
 - (void) giveQuiz:(id)sender
 {
-	//First, load the nib
+	//Before getting to work, reset our current state, so we only have 1 window at a time
+	[self resetState];
+	
+	//First, check to make sure there is more than 0 questions, else display error
+	if([flashCardsArray count] == 0)	//ERROR
+	{
+		NSAlert *alert = [[NSAlert alloc] init];
+		[alert setMessageText:@"Your question set has no questions... Please add some before trying to take the quiz."];
+		//[alert setAlertStyle:NSCriticalAlertStyle];
+		[alert runModal];
+		[alert release];
+		return;
+	}
+	
+	//Now, load the nib
 	if(![NSBundle loadNibNamed:@"Quiz" owner:self])
 		return;		//It failed, we're outta here!
 	
@@ -91,6 +105,7 @@
 
 - (IBAction) windowClosed:(id)sender					//This is called if the quiz window is unexpectedly closed.
 {
+	self.window = nil;
 	[self resetState];
 }
 #pragma mark Internal methods
@@ -141,6 +156,8 @@
 
 - (void) resetState
 {
+	if(window != nil)
+		[window close];
 	currentQuestionIndex = 0;
 	self.flashCardsArray = nil;
 	self.window = nil;
