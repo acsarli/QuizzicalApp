@@ -34,8 +34,7 @@
 
 - (void) beginQuiz:(id)sender
 {
-	[quizzer setFlashCardsArray:[controller arrangedObjects]];
-	[quizzer giveQuiz:sender];
+	[quizzer giveQuiz:[controller arrangedObjects]];
 }
 
 @end

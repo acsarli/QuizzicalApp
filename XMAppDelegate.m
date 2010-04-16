@@ -19,6 +19,7 @@
 #import "XMAppDelegate.h"
 #import "XMArgumentKeys.h"
 #import "PFMoveApplication.h"
+#import "LQSoftLanding.h"
 
 @interface XMAppDelegate (Private)
 
@@ -37,6 +38,7 @@
 		[self registerForNotifications];
 		[self launchCheck];
 		PFMoveToApplicationsFolderIfNecessary();
+		[[[LQSoftLanding alloc] initWithWindowNibName:@"SoftLanding"] showWindow:self];
 	}
 	
 	return self;
@@ -46,20 +48,22 @@
 {
 	if([[NSUserDefaults standardUserDefaults] integerForKey:@"date"] == 0) //First launch
 	{
-		[[NSUserDefaults standardUserDefaults] setInteger:([[NSDate date] timeIntervalSince1970]+2592000) forKey:@"date"];
+		[[NSUserDefaults standardUserDefaults] setInteger:([[NSDate date] timeIntervalSince1970]+2592000) forKey:@"date"];	//30 days
 	}
-	
-	if([[NSUserDefaults standardUserDefaults] integerForKey:@"date"] > [[NSDate date] timeIntervalSince1970]) //Expired
-		return NO;
-	else {
+	NSLog(@"%d < %d", [[NSUserDefaults standardUserDefaults] integerForKey:@"date"], [[NSDate date] timeIntervalSince1970]);
+
+	if(abs([[NSUserDefaults standardUserDefaults] integerForKey:@"date"]) < abs([[NSDate date] timeIntervalSince1970])) //Expired
+	{
 		return YES;
+	}
+	else {
+		return NO;
 	}
 }
 #pragma mark -
 #pragma mark Notification
 
 - (void)registerForNotifications {
-	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registrationChanged:) name:XMDidChangeRegistrationNotification object:nil];	
 }
 

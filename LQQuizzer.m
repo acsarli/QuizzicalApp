@@ -19,19 +19,24 @@
 - (id) init
 {
 	if(self = [super init])
+	{
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowClosed:) name:@"NSWindowWillCloseNotification" object:nil];
+		self.window = nil;
+	}
 	return self;
 }
 
 	 
-- (void) giveQuiz:(id)sender
+- (void) giveQuiz:(NSArray *)quiz
 {
-	//Before getting to work, reset our current state, so we only have 1 window at a time
-	[self resetState];
+	[self.window close];	//Either nil, or an object;
+	self.window = nil;
+	self.flashCardsArray = quiz;
 	
 	//First, check to make sure there is more than 0 questions, else display error
 	if([flashCardsArray count] == 0)	//ERROR
 	{
+		NSLog(@"%d", [flashCardsArray count]);
 		NSAlert *alert = [[NSAlert alloc] init];
 		[alert setMessageText:@"Your question set has no questions... Please add some before trying to take the quiz."];
 		//[alert setAlertStyle:NSCriticalAlertStyle];
