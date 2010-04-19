@@ -106,11 +106,11 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446A80DB6BCF400F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2F7446AA0DB6BCF400F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
-		32DBCF750370BD2300C91783 /* LittleQuizzer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleQuizzer_Prefix.pch; sourceTree = "<group>"; };
+		32DBCF750370BD2300C91783 /* Quizzical_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quizzical_Prefix.pch; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		8D15AC360486D014006FF6A4 /* LittleQuizzer-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "LittleQuizzer-Info.plist"; sourceTree = "<group>"; };
-		8D15AC370486D014006FF6A4 /* LittleQuizzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleQuizzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15AC360486D014006FF6A4 /* Quizzical-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Quizzical-Info.plist"; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Quizzical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE136B5C11072D67009767E9 /* LQArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQArrayController.h; sourceTree = "<group>"; };
 		EE136B5D11072D67009767E9 /* LQArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQArrayController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,12 +200,12 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D15AC370486D014006FF6A4 /* LittleQuizzer.app */,
+				8D15AC370486D014006FF6A4 /* Quizzical.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A37F4AAFDCFA73011CA2CEA /* LittleQuizzer */ = {
+		2A37F4AAFDCFA73011CA2CEA /* Quizzical */ = {
 			isa = PBXGroup;
 			children = (
 				E1B74B1A0667B4A90069E3BA /* Models */,
@@ -215,7 +215,7 @@
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
-			name = LittleQuizzer;
+			name = Quizzical;
 			sourceTree = "<group>";
 		};
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
@@ -241,7 +241,7 @@
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCF750370BD2300C91783 /* LittleQuizzer_Prefix.pch */,
+				32DBCF750370BD2300C91783 /* Quizzical_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -258,7 +258,7 @@
 				2F7446A70DB6BCF400F9684A /* MainMenu.xib */,
 				2F7446A90DB6BCF400F9684A /* MyDocument.xib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
-				8D15AC360486D014006FF6A4 /* LittleQuizzer-Info.plist */,
+				8D15AC360486D014006FF6A4 /* Quizzical-Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
@@ -285,9 +285,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D15AC270486D014006FF6A4 /* LittleQuizzer */ = {
+		8D15AC270486D014006FF6A4 /* Quizzical */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "LittleQuizzer" */;
+			buildConfigurationList = 26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "Quizzical" */;
 			buildPhases = (
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
@@ -298,10 +298,10 @@
 			);
 			dependencies = (
 			);
-			name = LittleQuizzer;
+			name = Quizzical;
 			productInstallPath = "$(HOME)/Applications";
-			productName = LittleQuizzer;
-			productReference = 8D15AC370486D014006FF6A4 /* LittleQuizzer.app */;
+			productName = Quizzical;
+			productReference = 8D15AC370486D014006FF6A4 /* Quizzical.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -312,14 +312,14 @@
 			attributes = {
 				ORGANIZATIONNAME = "Adrian Sarli";
 			};
-			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "LittleQuizzer" */;
+			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "Quizzical" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
-			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* LittleQuizzer */;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Quizzical */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D15AC270486D014006FF6A4 /* LittleQuizzer */,
+				8D15AC270486D014006FF6A4 /* Quizzical */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/LittleQuizzer\"",
+					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/Quizzical\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -424,14 +424,14 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LittleQuizzer_Prefix.pch;
-				INFOPLIST_FILE = "LittleQuizzer-Info.plist";
+				GCC_PREFIX_HEADER = Quizzical_Prefix.pch;
+				INFOPLIST_FILE = "Quizzical-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = LittleQuizzer;
+				PRODUCT_NAME = Quizzical;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,20 +442,20 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/LittleQuizzer\"",
+					"\"$(SDKROOT)/../../../Users/acsarli/Programming/Mac/Quizzical\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LittleQuizzer_Prefix.pch;
-				INFOPLIST_FILE = "LittleQuizzer-Info.plist";
+				GCC_PREFIX_HEADER = Quizzical_Prefix.pch;
+				INFOPLIST_FILE = "Quizzical-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = LittleQuizzer;
+				PRODUCT_NAME = Quizzical;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -488,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "LittleQuizzer" */ = {
+		26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "Quizzical" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26FC0AA60875C8B900E6366F /* Debug */,
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "LittleQuizzer" */ = {
+		26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "Quizzical" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26FC0AAA0875C8B900E6366F /* Debug */,

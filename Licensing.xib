@@ -12,9 +12,9 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="54"/>
 			<integer value="5"/>
 			<integer value="24"/>
-			<integer value="54"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -203,13 +203,13 @@
 					<object class="NSButton" id="832468320">
 						<reference key="NSNextResponder" ref="711788427"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{179, 12}, {96, 32}}</string>
+						<string key="NSFrame">{{159, 12}, {117, 32}}</string>
 						<reference key="NSSuperview" ref="711788427"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="228217843">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Trial</string>
+							<string key="NSContents">30 Day Trial</string>
 							<reference key="NSSupport" ref="588915811"/>
 							<reference key="NSControlView" ref="832468320"/>
 							<int key="NSButtonFlags">-2038284033</int>
@@ -788,12 +788,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="71192551"/>
 							<reference ref="421742366"/>
-							<reference ref="832468320"/>
 							<reference ref="755325033"/>
 							<reference ref="401619739"/>
 							<reference ref="365490768"/>
 							<reference ref="789055769"/>
 							<reference ref="550566610"/>
+							<reference ref="832468320"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">viewA</string>
@@ -1225,7 +1225,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{191, 455}, {482, 301}}</string>
+					<string>{{339, 455}, {482, 301}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableArray">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1240,7 +1240,7 @@
 							<int key="affinity">1</int>
 						</object>
 					</object>
-					<string>{{339, 49}, {482, 301}}</string>
+					<string>{{339, 70}, {482, 301}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableArray">
 						<bool key="EncodedWithXMLCoder">YES</bool>
