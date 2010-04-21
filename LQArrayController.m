@@ -10,6 +10,17 @@
 
 
 @implementation LQArrayController
+-(id) initWithContent:(id)content
+{
+	NSArray *newArray = [(NSArray *)content sortedArrayUsingSelector:@selector(compare:)];
+	self = [super initWithContent:newArray];
+	return self;
+}
+-(id) init
+{
+	self = [super init];
+	return self;
+}
 -(id)newObject
 {
 	id newObject = [super newObject];
