@@ -10,15 +10,9 @@
 
 
 @implementation LQArrayController
--(id) initWithContent:(id)content
+-(id)awakeAfterUsingCoder:(NSCoder *)aDecoder	//This is my hook for sorting
 {
-	NSArray *newArray = [(NSArray *)content sortedArrayUsingSelector:@selector(compare:)];
-	self = [super initWithContent:newArray];
-	return self;
-}
--(id) init
-{
-	self = [super init];
+	[self setSortDescriptors:[NSArray arrayWithObjects:[[[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES] autorelease], nil]];
 	return self;
 }
 -(id)newObject
