@@ -302,14 +302,14 @@
 															<string key="NSFrameSize">{264, 285}</string>
 															<reference key="NSSuperview" ref="663139333"/>
 															<bool key="NSEnabled">YES</bool>
-															<object class="NSTableHeaderView" key="NSHeaderView" id="709651633">
-																<reference key="NSNextResponder" ref="336598982"/>
+															<object class="NSTableHeaderView" key="NSHeaderView" id="920213729">
+																<reference key="NSNextResponder" ref="221815609"/>
 																<int key="NSvFlags">256</int>
 																<string key="NSFrameSize">{264, 17}</string>
-																<reference key="NSSuperview" ref="336598982"/>
+																<reference key="NSSuperview" ref="221815609"/>
 																<reference key="NSTableView" ref="18430144"/>
 															</object>
-															<object class="_NSCornerView" key="NSCornerView" id="239366688">
+															<object class="_NSCornerView" key="NSCornerView" id="651189208">
 																<reference key="NSNextResponder" ref="237078785"/>
 																<int key="NSvFlags">256</int>
 																<string key="NSFrame">{{264, 0}, {16, 17}}</string>
@@ -351,7 +351,7 @@
 																			<int key="NSfFlags">1044</int>
 																		</object>
 																		<reference key="NSControlView" ref="18430144"/>
-																		<object class="NSColor" key="NSBackgroundColor" id="701914964">
+																		<object class="NSColor" key="NSBackgroundColor" id="1033806070">
 																			<int key="NSColorSpace">6</int>
 																			<string key="NSCatalogName">System</string>
 																			<string key="NSColorName">controlBackgroundColor</string>
@@ -371,7 +371,7 @@
 																	<bool key="NSIsResizeable">YES</bool>
 																	<bool key="NSIsEditable">YES</bool>
 																	<reference key="NSTableView" ref="18430144"/>
-																	<object class="NSSortDescriptor" key="NSSortDescriptorPrototype" id="968320800">
+																	<object class="NSSortDescriptor" key="NSSortDescriptorPrototype" id="262878644">
 																		<string key="NSKey">title</string>
 																		<bool key="NSAscending">YES</bool>
 																		<string key="NSSelector">compare:</string>
@@ -422,7 +422,7 @@
 															</object>
 															<double key="NSIntercellSpacingWidth">3</double>
 															<double key="NSIntercellSpacingHeight">2</double>
-															<reference key="NSBackgroundColor" ref="701914964"/>
+															<reference key="NSBackgroundColor" ref="1033806070"/>
 															<object class="NSColor" key="NSGridColor">
 																<int key="NSColorSpace">6</int>
 																<string key="NSCatalogName">System</string>
@@ -439,7 +439,7 @@
 															<string key="NSAutosaveName">LQDocTable</string>
 															<object class="NSArray" key="NSSortDescriptors">
 																<bool key="EncodedWithXMLCoder">YES</bool>
-																<reference ref="968320800"/>
+																<reference ref="262878644"/>
 															</object>
 															<int key="NSColumnAutoresizingStyle">4</int>
 															<int key="NSDraggingSourceMaskForLocal">15</int>
@@ -477,21 +477,21 @@
 													<string key="NSAction">_doScroller:</string>
 													<double key="NSPercent">0.97714285714285709</double>
 												</object>
-												<object class="NSClipView" id="336598982">
+												<object class="NSClipView" id="221815609">
 													<reference key="NSNextResponder" ref="237078785"/>
 													<int key="NSvFlags">2304</int>
 													<object class="NSMutableArray" key="NSSubviews">
 														<bool key="EncodedWithXMLCoder">YES</bool>
-														<reference ref="709651633"/>
+														<reference ref="920213729"/>
 													</object>
 													<string key="NSFrameSize">{264, 17}</string>
 													<reference key="NSSuperview" ref="237078785"/>
-													<reference key="NSNextKeyView" ref="709651633"/>
-													<reference key="NSDocView" ref="709651633"/>
-													<reference key="NSBGColor" ref="701914964"/>
+													<reference key="NSNextKeyView" ref="920213729"/>
+													<reference key="NSDocView" ref="920213729"/>
+													<reference key="NSBGColor" ref="1033806070"/>
 													<int key="NScvFlags">4</int>
 												</object>
-												<reference ref="239366688"/>
+												<reference ref="651189208"/>
 											</object>
 											<string key="NSFrame">{{0, 23}, {279, 302}}</string>
 											<reference key="NSSuperview" ref="648309502"/>
@@ -500,8 +500,8 @@
 											<reference key="NSVScroller" ref="188901853"/>
 											<reference key="NSHScroller" ref="73925698"/>
 											<reference key="NSContentView" ref="663139333"/>
-											<reference key="NSHeaderClipView" ref="336598982"/>
-											<reference key="NSCornerView" ref="239366688"/>
+											<reference key="NSHeaderClipView" ref="221815609"/>
+											<reference key="NSCornerView" ref="651189208"/>
 											<bytes key="NSScrollAmts">QSAAAEGIAABBwAAAQcAAAA</bytes>
 										</object>
 									</object>
@@ -1586,7 +1586,7 @@
 							<reference ref="188901853"/>
 							<reference ref="73925698"/>
 							<reference ref="18430144"/>
-							<reference ref="709651633"/>
+							<reference ref="920213729"/>
 						</object>
 						<reference key="parent" ref="648309502"/>
 					</object>
@@ -1692,7 +1692,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">100257</int>
-						<reference key="object" ref="709651633"/>
+						<reference key="object" ref="920213729"/>
 						<reference key="parent" ref="237078785"/>
 					</object>
 				</object>
