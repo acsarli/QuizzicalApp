@@ -34,6 +34,7 @@
 
 - (void) beginQuiz:(id)sender
 {
+	//[window setIsVisible:NO];
 	[quizzer giveQuiz:[controller arrangedObjects]];
 }
 

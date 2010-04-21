@@ -15,6 +15,7 @@
 	IBOutlet NSButtonCell *answerNext;		//The answer/next button; Changed by buttonPushed:
 	IBOutlet NSButton *backButton;		//The answer/next button; Changed by buttonPushed:
 	IBOutlet NSWindow *window;			//The window
+	IBOutlet NSLevelIndicator *level;
 	NSInteger currentQuestionIndex;			//The index into arrayController
 	BOOL showingQuestion;					//This is true if the question is currently displayed, false if the answer is being displayed
 	BOOL isFinished;						//This is true if the quiz is finished and the final screen is showing
@@ -41,6 +42,7 @@
 @property (nonatomic,assign) NSButtonCell *answerNext;
 @property (nonatomic,assign) NSButton *backButton;
 @property (nonatomic,assign) NSWindow *window;
+@property (nonatomic,assign) NSLevelIndicator *level;
 
 
 @end

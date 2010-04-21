@@ -16,6 +16,8 @@
 @synthesize answerNext;
 @synthesize backButton;
 @synthesize window;
+@synthesize level;
+
 - (id) init
 {
 	if(self = [super init])
@@ -138,6 +140,7 @@
 	isFinished = YES;
 	[questionAnswerField setString:@"The End\nThis is the end of your quiz. Click Close to exit."];
 	[answerNext setTitle:@"Close"];
+	[[level cell] setIntegerValue:0];
 }
 - (void) exitQuiz
 {
@@ -146,8 +149,10 @@
 - (void) displayQuestionWithNumber: (NSInteger)questionNumber
 {
 	NSData *data = [[flashCardsArray objectAtIndex:currentQuestionIndex] valueForKey:@"questionField"];
+	NSInteger rating = [[[flashCardsArray objectAtIndex:currentQuestionIndex] valueForKey:@"rating"] intValue];
 	[questionAnswerField setString:@""];
 	[questionAnswerField replaceCharactersInRange:NSMakeRange(0, questionAnswerField.string.length) withRTF:data];
+	[[level cell] setIntegerValue:rating];
 	showingQuestion = YES;
 }
 
@@ -169,6 +174,7 @@
 	self.answerNext = nil;
 	self.backButton = nil;
 	self.questionAnswerField = nil;
+	self.level = nil;
 	showingQuestion = NO;
 	isFinished = NO;
 }
