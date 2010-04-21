@@ -100,7 +100,7 @@
 										<object class="NSTextView" id="178198247">
 											<reference key="NSNextResponder" ref="264515303"/>
 											<int key="NSvFlags">2322</int>
-											<string key="NSFrameSize">{215, 13}</string>
+											<string key="NSFrame">{{0, -1}, {215, 14}}</string>
 											<reference key="NSSuperview" ref="264515303"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="764817071">
 												<object class="NSLayoutManager" key="NSLayoutManager">
@@ -197,7 +197,7 @@
 								<object class="BWTransparentScroller" id="673647321">
 									<reference key="NSNextResponder" ref="860779515"/>
 									<int key="NSvFlags">-2147483392</int>
-									<string key="NSFrame">{{150, 0}, {12, 283}}</string>
+									<string key="NSFrame">{{-100, -100}, {12, 283}}</string>
 									<reference key="NSSuperview" ref="860779515"/>
 									<int key="NSArrowsLoc">2</int>
 									<reference key="NSTarget" ref="860779515"/>
@@ -219,7 +219,7 @@
 							<string key="NSFrame">{{21, 60}, {215, 74}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSNextKeyView" ref="264515303"/>
-							<int key="NSsFlags">528</int>
+							<int key="NSsFlags">512</int>
 							<reference key="NSVScroller" ref="673647321"/>
 							<reference key="NSHScroller" ref="818526619"/>
 							<reference key="NSContentView" ref="264515303"/>
@@ -437,9 +437,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>{{364, 263}, {262, 154}}</string>
+					<string>{{600, 234}, {262, 154}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{364, 263}, {262, 154}}</string>
+					<string>{{600, 234}, {262, 154}}</string>
 					<integer value="1"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -1168,7 +1168,7 @@
 			<integer value="3000" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<string key="IBDocument.LastKnownRelativeProjectPath">LittleQuizzer.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">Quizzical.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

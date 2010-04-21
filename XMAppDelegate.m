@@ -38,7 +38,9 @@
 		[self registerForNotifications];
 		[self launchCheck];
 		PFMoveToApplicationsFolderIfNecessary();
-		[[[LQSoftLanding alloc] initWithWindowNibName:@"SoftLanding"] showWindow:self];
+		if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HideSoftLanding"] != YES) {
+			[self showSoftLanding:self];
+		}
 	}
 	
 	return self;
@@ -75,5 +77,8 @@
 	// any first run UI by putting it after this call.
 	
 }
-
+- (IBAction) showSoftLanding:(id)sender
+{
+	[[[LQSoftLanding alloc] initWithWindowNibName:@"SoftLanding"] showWindow:self];
+}
 @end

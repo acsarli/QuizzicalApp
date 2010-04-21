@@ -12,9 +12,9 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="54"/>
 			<integer value="5"/>
 			<integer value="24"/>
+			<integer value="54"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -133,7 +133,7 @@
 						<object class="NSTextFieldCell" key="NSCell" id="1069050684">
 							<int key="NSCellFlags">68288064</int>
 							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">LittleQuizzer Registration</string>
+							<string key="NSContents">Quizzical Registration</string>
 							<object class="NSFont" key="NSSupport" id="237462044">
 								<string key="NSName">LucidaGrande</string>
 								<double key="NSSize">17</double>
@@ -282,7 +282,7 @@
 						<object class="NSButtonCell" key="NSCell" id="1005960158">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Buy LittleQuizzer Now!</string>
+							<string key="NSContents">Buy Quizzical Now!</string>
 							<object class="NSFont" key="NSSupport" id="29">
 								<string key="NSName">LucidaGrande-Bold</string>
 								<double key="NSSize">12</double>
@@ -2006,7 +2006,7 @@
 			<integer value="3000" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<string key="IBDocument.LastKnownRelativeProjectPath">LittleQuizzer.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">Quizzical.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="NS.key.0">CodeFabExample_splash</string>

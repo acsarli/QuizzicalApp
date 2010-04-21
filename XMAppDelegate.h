@@ -34,6 +34,7 @@
 - (void) launchCheck;
 - (IBAction) showLicensingWindow:(id)sender;
 - (BOOL) verifyLicense;
+- (IBAction) showSoftLanding:(id)sender;
 
 @end
 
