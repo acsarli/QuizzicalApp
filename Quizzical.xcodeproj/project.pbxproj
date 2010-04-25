@@ -33,6 +33,8 @@
 		0DAAD39D115F9810000466D1 /* NotePad.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAD39C115F9810000466D1 /* NotePad.icns */; };
 		0DAAD3A6115F9C81000466D1 /* LQQuizzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAD3A5115F9C81000466D1 /* LQQuizzer.m */; };
 		0DAAD3A8115FB03D000466D1 /* Quiz.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAD3A7115FB03D000466D1 /* Quiz.xib */; };
+		0DB1480F1181B49D00BDCA04 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB1480E1181B49D00BDCA04 /* Sparkle.framework */; };
+		0DB148521181B4AB00BDCA04 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0DB1480E1181B49D00BDCA04 /* Sparkle.framework */; };
 		0DB39EE2117E587D008A6D85 /* ESiTunesScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EDD117E587C008A6D85 /* ESiTunesScroller.m */; };
 		0DB39EE3117E587D008A6D85 /* ESScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EDF117E587C008A6D85 /* ESScrollView.m */; };
 		0DB39EE4117E587D008A6D85 /* ESScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EE1117E587C008A6D85 /* ESScroller.m */; };
@@ -55,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0DB148521181B4AB00BDCA04 /* Sparkle.framework in CopyFiles */,
 				0DAAD37F115F86E1000466D1 /* BWToolkitFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,7 @@
 		0DAAD3A4115F9C81000466D1 /* LQQuizzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQQuizzer.h; sourceTree = "<group>"; };
 		0DAAD3A5115F9C81000466D1 /* LQQuizzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQQuizzer.m; sourceTree = "<group>"; };
 		0DAAD3A7115FB03D000466D1 /* Quiz.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quiz.xib; sourceTree = "<group>"; };
+		0DB1480E1181B49D00BDCA04 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		0DB39EDC117E587C008A6D85 /* ESiTunesScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESiTunesScroller.h; sourceTree = "<group>"; };
 		0DB39EDD117E587C008A6D85 /* ESiTunesScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESiTunesScroller.m; sourceTree = "<group>"; };
 		0DB39EDE117E587C008A6D85 /* ESScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESScrollView.h; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				0D97AA62117556AC00011518 /* libcrypto.0.9.7.dylib in Frameworks */,
 				0D97AA781175577400011518 /* QuartzCore.framework in Frameworks */,
 				0D97AB2B117678CE00011518 /* Security.framework in Frameworks */,
+				0DB1480F1181B49D00BDCA04 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +208,7 @@
 		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DB1480E1181B49D00BDCA04 /* Sparkle.framework */,
 				0DAAD34D115F86D1000466D1 /* BWToolkitFramework.framework */,
 				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
 				7788DA0506752A1600599AAD /* CoreData.framework */,

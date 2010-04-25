@@ -86,11 +86,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.1</string>
+	<string>0.1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.1</string>
+	<string>0.1.0</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
@@ -99,5 +99,7 @@
 	<string>NSApplication</string>
 	<key>LQQuizzerFinishedText</key>
 	<string>The End\nThis is the end of your quiz. Click Finish to exit.</string>
+	<key>SUFeedURL</key>
+	<string>http://aeleronsoftware.com/shine/appcast.php</string>
 </dict>
 </plist>
