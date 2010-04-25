@@ -596,7 +596,7 @@
 																											<string>public.url</string>
 																										</object>
 																									</object>
-																									<string key="NSFrameSize">{454, 0}</string>
+																									<string key="NSFrameSize">{454, 14}</string>
 																									<reference key="NSSuperview" ref="911674817"/>
 																									<object class="NSTextContainer" key="NSTextContainer" id="580868918">
 																										<object class="NSLayoutManager" key="NSLayoutManager">
@@ -818,7 +818,7 @@
 																											<string>public.url</string>
 																										</object>
 																									</object>
-																									<string key="NSFrameSize">{454, 0}</string>
+																									<string key="NSFrameSize">{454, 14}</string>
 																									<reference key="NSSuperview" ref="513987932"/>
 																									<object class="NSTextContainer" key="NSTextContainer" id="1010816846">
 																										<object class="NSLayoutManager" key="NSLayoutManager">
@@ -1173,10 +1173,6 @@
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
 			<object class="NSUserDefaultsController" id="54304143">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>SortDescriptors</string>
-				</object>
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="772583788">
@@ -1321,6 +1317,14 @@
 						<reference key="destination" ref="827802848"/>
 					</object>
 					<int key="connectionID">100279</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">tableView</string>
+						<reference key="source" ref="488872867"/>
+						<reference key="destination" ref="18430144"/>
+					</object>
+					<int key="connectionID">100280</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1746,6 +1750,7 @@
 					<string>100252.IBPluginDependency</string>
 					<string>100253.IBPluginDependency</string>
 					<string>100254.IBPluginDependency</string>
+					<string>100257.IBPluginDependency</string>
 					<string>5.IBEditorWindowLastContentRect</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBWindowTemplateEditedContentRect</string>
@@ -1804,9 +1809,10 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{0, 4}, {1024, 705}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{0, 4}, {1024, 705}}</string>
+					<string>{{256, 4}, {1024, 705}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>{{256, 4}, {1024, 705}}</string>
 					<integer value="1"/>
 					<boolean value="NO"/>
 					<boolean value="YES"/>
@@ -1832,7 +1838,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100279</int>
+			<int key="maxID">100280</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1995,12 +2001,14 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
 							<string>quizzer</string>
+							<string>tableView</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSArrayController</string>
 							<string>LQQuizzer</string>
+							<string>NSTableView</string>
 							<string>NSWindow</string>
 						</object>
 					</object>
@@ -2010,6 +2018,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
 							<string>quizzer</string>
+							<string>tableView</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -2021,6 +2030,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">quizzer</string>
 								<string key="candidateClassName">LQQuizzer</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">tableView</string>
+								<string key="candidateClassName">NSTableView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">window</string>
@@ -2637,6 +2650,20 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">QuartzCore.framework/Headers/CIImageProvider.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">Sparkle.framework/Headers/SUAppcast.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">Sparkle.framework/Headers/SUUpdater.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

@@ -35,6 +35,7 @@
 		0DAAD3A8115FB03D000466D1 /* Quiz.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAAD3A7115FB03D000466D1 /* Quiz.xib */; };
 		0DB1480F1181B49D00BDCA04 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB1480E1181B49D00BDCA04 /* Sparkle.framework */; };
 		0DB148521181B4AB00BDCA04 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0DB1480E1181B49D00BDCA04 /* Sparkle.framework */; };
+		0DB149531184DFC300BDCA04 /* AHTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB149521184DFC300BDCA04 /* AHTableHeaderCell.m */; };
 		0DB39EE2117E587D008A6D85 /* ESiTunesScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EDD117E587C008A6D85 /* ESiTunesScroller.m */; };
 		0DB39EE3117E587D008A6D85 /* ESScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EDF117E587C008A6D85 /* ESScrollView.m */; };
 		0DB39EE4117E587D008A6D85 /* ESScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39EE1117E587C008A6D85 /* ESScroller.m */; };
@@ -107,6 +108,8 @@
 		0DAAD3A5115F9C81000466D1 /* LQQuizzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQQuizzer.m; sourceTree = "<group>"; };
 		0DAAD3A7115FB03D000466D1 /* Quiz.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quiz.xib; sourceTree = "<group>"; };
 		0DB1480E1181B49D00BDCA04 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		0DB149511184DFC300BDCA04 /* AHTableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTableHeaderCell.h; sourceTree = "<group>"; };
+		0DB149521184DFC300BDCA04 /* AHTableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTableHeaderCell.m; sourceTree = "<group>"; };
 		0DB39EDC117E587C008A6D85 /* ESiTunesScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESiTunesScroller.h; sourceTree = "<group>"; };
 		0DB39EDD117E587C008A6D85 /* ESiTunesScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESiTunesScroller.m; sourceTree = "<group>"; };
 		0DB39EDE117E587C008A6D85 /* ESScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESScrollView.h; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				0DB39EDF117E587C008A6D85 /* ESScrollView.m */,
 				0DB39EE0117E587C008A6D85 /* ESScroller.h */,
 				0DB39EE1117E587C008A6D85 /* ESScroller.m */,
+				0DB149511184DFC300BDCA04 /* AHTableHeaderCell.h */,
+				0DB149521184DFC300BDCA04 /* AHTableHeaderCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				0DB39EE3117E587D008A6D85 /* ESScrollView.m in Sources */,
 				0DB39EE4117E587D008A6D85 /* ESScroller.m in Sources */,
 				0D6DDBFD117F8E5C008A536C /* LQDocumentController.m in Sources */,
+				0DB149531184DFC300BDCA04 /* AHTableHeaderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 	IBOutlet LQQuizzer *quizzer;
 	IBOutlet NSArrayController *controller;
 	IBOutlet NSWindow *window;
+	IBOutlet NSTableView *tableView;
 }
 - (void) beginQuiz:(id)sender;
 @property (nonatomic, retain) LQQuizzer *quizzer;
