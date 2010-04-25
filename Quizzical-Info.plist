@@ -101,5 +101,7 @@
 	<string>The End\nThis is the end of your quiz. Click Finish to exit.</string>
 	<key>SUFeedURL</key>
 	<string>http://aeleronsoftware.com/shine/appcast.php</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 2010 Adrian Sarli</string>
 </dict>
 </plist>
