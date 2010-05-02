@@ -51,4 +51,12 @@
 	[quizzer giveQuiz:[controller arrangedObjects]];
 }
 
+- (void) addQuestion:(id)sender
+{
+	[controller add:sender];
+}
+- (void) removeQuestion:(id)sender
+{
+	[controller remove:sender];
+}
 @end

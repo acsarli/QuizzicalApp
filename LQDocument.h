@@ -16,6 +16,8 @@
 	IBOutlet NSTableView *tableView;
 }
 - (void) beginQuiz:(id)sender;
+- (void) addQuestion:(id)sender;
+- (void) removeQuestion:(id)sender;
 @property (nonatomic, retain) LQQuizzer *quizzer;
 @property (nonatomic, retain) NSArrayController *controller;
 @property (nonatomic, retain) NSWindow *mainWindow;
