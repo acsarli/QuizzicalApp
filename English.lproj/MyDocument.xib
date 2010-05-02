@@ -1312,19 +1312,27 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">window</string>
-						<reference key="source" ref="488872867"/>
-						<reference key="destination" ref="827802848"/>
-					</object>
-					<int key="connectionID">100279</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">tableView</string>
 						<reference key="source" ref="488872867"/>
 						<reference key="destination" ref="18430144"/>
 					</object>
 					<int key="connectionID">100280</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">mainWindow</string>
+						<reference key="source" ref="488872867"/>
+						<reference key="destination" ref="827802848"/>
+					</object>
+					<int key="connectionID">100281</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">window</string>
+						<reference key="source" ref="488872867"/>
+						<reference key="destination" ref="827802848"/>
+					</object>
+					<int key="connectionID">100282</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1838,7 +1846,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100280</int>
+			<int key="maxID">100282</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2000,16 +2008,16 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
+							<string>mainWindow</string>
 							<string>quizzer</string>
 							<string>tableView</string>
-							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSArrayController</string>
+							<string>NSWindow</string>
 							<string>LQQuizzer</string>
 							<string>NSTableView</string>
-							<string>NSWindow</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2017,9 +2025,9 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
+							<string>mainWindow</string>
 							<string>quizzer</string>
 							<string>tableView</string>
-							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2028,16 +2036,16 @@
 								<string key="candidateClassName">NSArrayController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">mainWindow</string>
+								<string key="candidateClassName">NSWindow</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">quizzer</string>
 								<string key="candidateClassName">LQQuizzer</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">tableView</string>
 								<string key="candidateClassName">NSTableView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">window</string>
-								<string key="candidateClassName">NSWindow</string>
 							</object>
 						</object>
 					</object>

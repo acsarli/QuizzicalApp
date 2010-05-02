@@ -12,12 +12,13 @@
 @interface MyDocument : NSPersistentDocument {
 	IBOutlet LQQuizzer *quizzer;
 	IBOutlet NSArrayController *controller;
-	IBOutlet NSWindow *window;
+	IBOutlet NSWindow *mainWindow;
 	IBOutlet NSTableView *tableView;
 }
 - (void) beginQuiz:(id)sender;
 @property (nonatomic, retain) LQQuizzer *quizzer;
 @property (nonatomic, retain) NSArrayController *controller;
+@property (nonatomic, retain) NSWindow *mainWindow;
 
 
 @end

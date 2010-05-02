@@ -13,7 +13,7 @@
 @implementation MyDocument
 @synthesize quizzer;
 @synthesize controller;
-
+@synthesize mainWindow;
 - (id)init 
 {
     self = [super init];
@@ -47,6 +47,7 @@
 - (void) beginQuiz:(id)sender
 {
 	//[window setIsVisible:NO];
+	[mainWindow makeFirstResponder:nil];
 	[quizzer giveQuiz:[controller arrangedObjects]];
 }
 
