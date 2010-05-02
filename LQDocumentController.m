@@ -7,13 +7,13 @@
 //
 
 #import "LQDocumentController.h"
-#import "MyDocument.h"
+#import "LQDocument.h"
 
 @implementation LQDocumentController
 
 - (id) openUntitledDocumentAndDisplay:(BOOL)displayDocument error:(NSError **)outError
 {
-	MyDocument *doc = (MyDocument *)[super openUntitledDocumentAndDisplay:displayDocument error:outError];
+	LQDocument *doc = (LQDocument *)[super openUntitledDocumentAndDisplay:displayDocument error:outError];
 	[doc.controller add:self];
 	return doc;
 }

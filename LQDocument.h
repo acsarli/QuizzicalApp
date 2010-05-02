@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "LQQuizzer.h"
 
-@interface MyDocument : NSPersistentDocument {
+@interface LQDocument : NSPersistentDocument {
 	IBOutlet LQQuizzer *quizzer;
 	IBOutlet NSArrayController *controller;
 	IBOutlet NSWindow *mainWindow;

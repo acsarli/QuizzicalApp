@@ -6,11 +6,11 @@
 //  Copyright SimpleUpdates.com, Inc. 2009 . All rights reserved.
 //
 
-#import "MyDocument.h"
+#import "LQDocument.h"
 #import "AHTableHeaderCell.h"
 
 
-@implementation MyDocument
+@implementation LQDocument
 @synthesize quizzer;
 @synthesize controller;
 @synthesize mainWindow;
@@ -47,7 +47,7 @@
 - (void) beginQuiz:(id)sender
 {
 	//[window setIsVisible:NO];
-	[mainWindow makeFirstResponder:nil];
+	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
 	[quizzer giveQuiz:[controller arrangedObjects]];
 }
 
