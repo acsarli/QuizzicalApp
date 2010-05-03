@@ -23,7 +23,7 @@
 
 }
 - (BOOL) isTrialExpired;
-
+- (void)checkDeadDate;
 @end
 
 

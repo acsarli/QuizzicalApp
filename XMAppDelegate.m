@@ -34,7 +34,7 @@
 {
 	self = [super init];
 	if (self != nil) {
-		
+		[self checkDeadDate];
 		[self registerForNotifications];
 		[self launchCheck];
 		PFMoveToApplicationsFolderIfNecessary();
@@ -62,6 +62,16 @@
 		return NO;
 	}
 }
+
+- (void)checkDeadDate
+{
+	if([[NSDate date] timeIntervalSince1970] > 1275350400)
+	{
+		NSAlert *alert = [NSAlert alertWithMessageText:@"Quizzical Beta 1 has expired. Please download the latest version." defaultButton:@"Quit" alternateButton:nil otherButton:nil informativeTextWithFormat:nil];
+		[[NSApplication sharedApplication] terminate:self];
+	}
+}
+
 #pragma mark -
 #pragma mark Notification
 
