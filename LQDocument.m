@@ -14,6 +14,9 @@
 @synthesize quizzer;
 @synthesize controller;
 @synthesize mainWindow;
+@synthesize questionView;
+@synthesize answerView;
+
 - (id)init 
 {
     self = [super init];
@@ -50,7 +53,7 @@
 	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
 	[quizzer giveQuiz:[controller arrangedObjects]];
 }
-
+#pragma mark IBActions
 - (void) addQuestion:(id)sender
 {
 	[controller add:sender];
@@ -59,4 +62,8 @@
 {
 	[controller remove:sender];
 }
+
+
+
+
 @end

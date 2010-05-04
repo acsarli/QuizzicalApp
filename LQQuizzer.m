@@ -151,7 +151,7 @@
 	NSData *data = [[flashCardsArray objectAtIndex:currentQuestionIndex] valueForKey:@"questionField"];
 	NSInteger rating = [[[flashCardsArray objectAtIndex:currentQuestionIndex] valueForKey:@"rating"] intValue];
 	[questionAnswerField setString:@""];
-	[questionAnswerField replaceCharactersInRange:NSMakeRange(0, questionAnswerField.string.length) withRTF:data];
+	[questionAnswerField replaceCharactersInRange:NSMakeRange(0, questionAnswerField.string.length) withRTFD:data];
 	[[level cell] setIntegerValue:rating];
 	showingQuestion = YES;
 }
@@ -160,7 +160,7 @@
 {
 	NSData *data = [[flashCardsArray objectAtIndex:currentQuestionIndex] valueForKey:@"answerField"];
 	[questionAnswerField setString:@""];
-	[questionAnswerField replaceCharactersInRange:NSMakeRange(0, questionAnswerField.string.length) withRTF:data];
+	[questionAnswerField replaceCharactersInRange:NSMakeRange(0, questionAnswerField.string.length) withRTFD:data];
 	showingQuestion = NO;
 }
 
