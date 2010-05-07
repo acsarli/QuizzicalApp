@@ -6,10 +6,10 @@
 //  Copyright 2010 SimpleUpdates LLC. All rights reserved.
 //
 
-#import "AHTableHeaderCell.h"
+#import "LQTableHeaderCell.h"
 
 
-@implementation AHTableHeaderCell
+@implementation LQTableHeaderCell
 
 @synthesize activeCellGradient;
 @synthesize inactiveCellGradient;

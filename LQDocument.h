@@ -15,18 +15,19 @@
 	IBOutlet NSArrayController *controller;
 	IBOutlet NSWindow *mainWindow;
 	IBOutlet NSTableView *tableView;
-	IBOutlet NSTextView *questionView;
-	IBOutlet NSTextView *answerView;
+	IBOutlet NSToolbarItem *takeQuizToolbarItem;
 }
 - (void) beginQuiz:(id)sender;
 - (void) addQuestion:(id)sender;
 - (void) removeQuestion:(id)sender;
-
+- (void) hardTest:(id)sender;
+- (void) medTest:(id)sender;
+- (void) easyTest:(id)sender;
 
 @property (nonatomic, retain) LQQuizzer *quizzer;
 @property (nonatomic, retain) NSArrayController *controller;
 @property (nonatomic, retain) NSWindow *mainWindow;
-@property (nonatomic, retain) IBOutlet NSTextView *questionView;
-@property (nonatomic, retain) IBOutlet NSTextView *answerView;
+@property (nonatomic, retain) IBOutlet NSToolbarItem *takeQuizToolbarItem;
+
 
 @end

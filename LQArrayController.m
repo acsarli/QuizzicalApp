@@ -12,7 +12,7 @@
 @implementation LQArrayController
 -(id)awakeAfterUsingCoder:(NSCoder *)aDecoder	//This is my hook for sorting
 {
-	[self setSortDescriptors:[NSArray arrayWithObjects:[[[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES] autorelease], nil]];
+	[self setSortDescriptors:[NSArray arrayWithObjects:[[[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES selector:@selector(compareAlphaNumerically:)] autorelease], nil]];
 	return self;
 }
 -(id)newObject

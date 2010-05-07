@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface AHTableHeaderCell : NSTableHeaderCell {
+@interface LQTableHeaderCell : NSTableHeaderCell {
 	NSGradient *activeCellGradient;
 	NSGradient *inactiveCellGradient;
 	NSGradient *cellBorder;

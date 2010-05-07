@@ -53,6 +53,7 @@
 
 - (IBAction) importImage:(id)sender
 {
+	DLog(@"TEST");
     IKPictureTaker *sharedPictureTaker = [IKPictureTaker pictureTaker];
     
     [sharedPictureTaker setValue:[NSNumber numberWithBool:YES] forKey:IKPictureTakerShowEffectsKey];
