@@ -33,11 +33,11 @@
 -(void) awakeFromNib
 {
 	LQTableHeaderCell *cell = [[LQTableHeaderCell alloc] init];
-	[cell setTitle:@"Question Title"];
+	[cell setTitle:[[[tableView.tableColumns objectAtIndex:0] headerCell] title]];
 	[[tableView.tableColumns objectAtIndex:0] setHeaderCell:[cell autorelease]];
 
 	cell = [[LQTableHeaderCell alloc] init];
-	[cell setTitle:@"Difficulty"];
+	[cell setTitle:[[[tableView.tableColumns objectAtIndex:1] headerCell] title]];
 	[[tableView.tableColumns objectAtIndex:1] setHeaderCell:[cell autorelease]];
 	
 	

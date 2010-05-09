@@ -40,17 +40,17 @@
 	<key>CFBundleIconFile</key>
 	<string>Quizzical.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.adriansarli.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.2.0</string>
+	<string>1.0.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.2.0</string>
+	<string>1.0.2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>SUPublicDSAKeyFile</key>
@@ -62,7 +62,7 @@
 	<key>LQQuizzerFinishedText</key>
 	<string>The End\nThis is the end of your quiz. Click Finish to exit.</string>
 	<key>SUFeedURL</key>
-	<string>http://adriansarli.com/quizzical.xml</string>
+	<string>http://aceonesoftware.com/shine/appcast.php?id=7</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright 2010 Adrian Sarli</string>
 </dict>

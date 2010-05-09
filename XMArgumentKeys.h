@@ -14,7 +14,7 @@
 #define kXMProductCode @"4308439"
 
 //TODO: Change this line to match your potionstore URL:
-#define kXMWebStoreURL @"http://store.example.com/"
+#define kXMWebStoreURL @"http://adriansarli.com/"
 
 #pragma mark -
 #pragma mark Preference Keys 

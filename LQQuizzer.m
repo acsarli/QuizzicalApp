@@ -46,10 +46,15 @@
 		[alert release];
 		return;
 	}
+	//Get the current window position and size
 	
 	//Now, load the nib
 	if(![NSBundle loadNibNamed:@"Quiz" owner:self])
 		return;		//It failed, we're outta here!
+	[window makeKeyAndOrderFront:self];
+	//Set up the window size and position
+//	NSSize windowSize = [NSApp mainWindow].size;
+//	NSPoint windowOrigin = [NSApp mainWindow].origin;
 	
 	//Now, set up the index
 	currentQuestionIndex = 0;
