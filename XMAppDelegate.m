@@ -34,7 +34,7 @@
 {
 	self = [super init];
 	if (self != nil) {
-		[self checkDeadDate];
+		//[self checkDeadDate];
 		[self registerForNotifications];
 		[self launchCheck];
 		PFMoveToApplicationsFolderIfNecessary();
