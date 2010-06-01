@@ -12,13 +12,13 @@
 				<string>quizzical</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>Quizzical</string>
+			<string>Quizzical_Document</string>
 			<key>CFBundleTypeMIMETypes</key>
 			<array>
 				<string>text/xml</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>XML</string>
+			<string>Quizzical Document</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
@@ -46,7 +46,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>

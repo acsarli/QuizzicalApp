@@ -32,15 +32,19 @@
 
 -(void) awakeFromNib
 {
+	//Set up our custom header cells
+	
 	LQTableHeaderCell *cell = [[LQTableHeaderCell alloc] init];
+	//Keep the same title as before
 	[cell setTitle:[[[tableView.tableColumns objectAtIndex:0] headerCell] title]];
 	[[tableView.tableColumns objectAtIndex:0] setHeaderCell:[cell autorelease]];
 
 	cell = [[LQTableHeaderCell alloc] init];
+	//Keep the same title as before
 	[cell setTitle:[[[tableView.tableColumns objectAtIndex:1] headerCell] title]];
 	[[tableView.tableColumns objectAtIndex:1] setHeaderCell:[cell autorelease]];
 	
-	
+	//Set up the popup toolbar item
 	NSAssert(takeQuizToolbarItem != nil, @"");
 	NSMenu *takeQuizToolbarMenu = [[NSMenu alloc] init];
 	[takeQuizToolbarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Quiz on hardest questions" action:@selector(hardTest:) keyEquivalent:@""]];
@@ -48,6 +52,8 @@
 	[takeQuizToolbarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Quiz on easy questions" action:@selector(easyTest:) keyEquivalent:@""]];
 
 	[takeQuizToolbarItem setMenu:takeQuizToolbarMenu];
+	
+	//Insert it
 	[[mainWindow toolbar] insertItemWithItemIdentifier:@"LQGroup" atIndex:0];
 }
 
@@ -59,9 +65,7 @@
 
 - (void) beginQuiz:(id)sender
 {
-	//[window setIsVisible:NO];
-	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
-	[quizzer giveQuiz:[controller arrangedObjects]];
+	[self takeTestWithDifficulty:0];
 }
 #pragma mark IBActions
 - (void) addQuestion:(id)sender
@@ -74,18 +78,27 @@
 }
 - (void) hardTest:(id)sender
 {
-	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
-	[quizzer giveQuiz:[[controller arrangedObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"rating==3"]]];
+	[self takeTestWithDifficulty:3];
 }
 - (void) medTest:(id)sender
 {
-	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
-	[quizzer giveQuiz:[[controller arrangedObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"rating==2"]]];
+	[self takeTestWithDifficulty:2];
 }
 - (void) easyTest:(id)sender
 {
+	[self takeTestWithDifficulty:1];
+}
+
+//This is a catch-all for tests; Difficulty of 0 is all questions
+- (void) takeTestWithDifficulty:(int)difficulty
+{
 	[mainWindow makeFirstResponder:nil];	//This is needed so that if the user was editing a field, it will take effect
-	[quizzer giveQuiz:[[controller arrangedObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"rating==1"]]];
+	if(difficulty == 0)
+	{
+		[quizzer giveQuiz:[controller arrangedObjects]];
+		return;
+	}
+	[quizzer giveQuiz:[[controller arrangedObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"rating==%d", difficulty]]];
 }
 
 - (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSString *)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag
@@ -100,7 +113,7 @@
 		
 		[item setMenu:takeQuizToolbarMenu];
 		
-		[item setImage:[NSImage imageNamed: @"startQuiz"]];
+		[item setImage:[NSImage imageNamed: @"Play_Toolbar"]];
 		[item setLabel:@"Take Quiz"];
 		[item setTarget:self];
 		[item setAction:@selector(beginQuiz:)];

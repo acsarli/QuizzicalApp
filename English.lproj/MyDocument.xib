@@ -21,7 +21,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="100022"/>
+			<integer value="100119"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -110,9 +110,9 @@
 								<string key="NSToolbarItemPaletteLabel">Add Question</string>
 								<string key="NSToolbarItemToolTip"/>
 								<nil key="NSToolbarItemView"/>
-								<object class="NSCustomResource" key="NSToolbarItemImage" id="481464608">
+								<object class="NSCustomResource" key="NSToolbarItemImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">NSAddTemplate</string>
+									<string key="NSResourceName">Plus_Toolbar</string>
 								</object>
 								<nil key="NSToolbarItemTarget"/>
 								<nil key="NSToolbarItemAction"/>
@@ -134,7 +134,7 @@
 								<nil key="NSToolbarItemView"/>
 								<object class="NSCustomResource" key="NSToolbarItemImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">NSRemoveTemplate</string>
+									<string key="NSResourceName">Minus_Toolbar</string>
 								</object>
 								<nil key="NSToolbarItemTarget"/>
 								<nil key="NSToolbarItemAction"/>
@@ -270,6 +270,7 @@
 					<object class="NSMutableArray" key="NSToolbarIBDefaultItems">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference ref="325369972"/>
+						<reference ref="653993485"/>
 						<reference ref="816068391"/>
 						<reference ref="288482571"/>
 					</object>
@@ -317,7 +318,10 @@
 														<reference key="NSControlView" ref="636646456"/>
 														<int key="NSButtonFlags">-2033958657</int>
 														<int key="NSButtonFlags2">163</int>
-														<reference key="NSNormalImage" ref="481464608"/>
+														<object class="NSCustomResource" key="NSNormalImage">
+															<string key="NSClassName">NSImage</string>
+															<string key="NSResourceName">NSAddTemplate</string>
+														</object>
 														<string key="NSAlternateContents"/>
 														<string key="NSKeyEquivalent"/>
 														<int key="NSPeriodicDelay">200</int>
@@ -1868,7 +1872,7 @@
 					<string>com.brandonwalkin.BWToolkit</string>
 					<string>com.brandonwalkin.BWToolkit</string>
 					<string>com.brandonwalkin.BWToolkit</string>
-					<string>{{262, 709}, {616, 0}}</string>
+					<string>{{456, 482}, {616, 227}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>KBPopUpToolbarItem</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1901,9 +1905,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{339, 5}, {1024, 704}}</string>
+					<string>{{252, 5}, {1024, 704}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{339, 5}, {1024, 704}}</string>
+					<string>{{252, 5}, {1024, 704}}</string>
 					<integer value="1"/>
 					<boolean value="NO"/>
 					<boolean value="YES"/>
@@ -3100,20 +3104,22 @@
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>ImageCapture</string>
+				<string>Minus_Toolbar</string>
 				<string>NSAddTemplate</string>
 				<string>NSFollowLinkFreestandingTemplate</string>
 				<string>NSMenuCheckmark</string>
 				<string>NSMenuMixedState</string>
-				<string>NSRemoveTemplate</string>
+				<string>Plus_Toolbar</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{32, 32}</string>
 				<string>{32, 32}</string>
 				<string>{8, 8}</string>
 				<string>{10, 10}</string>
 				<string>{9, 8}</string>
 				<string>{7, 2}</string>
-				<string>{8, 8}</string>
+				<string>{32, 32}</string>
 			</object>
 		</object>
 	</data>

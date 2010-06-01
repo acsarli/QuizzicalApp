@@ -27,7 +27,7 @@ static XMLicensingWindowController *_sharedLicensingWindowController = nil;
 @synthesize isLicensed;
 @synthesize userInfo;
 @synthesize currentView;
-
+@synthesize trialButton;
 
 #pragma mark -
 #pragma mark Singleton

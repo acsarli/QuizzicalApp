@@ -27,6 +27,8 @@
 	IBOutlet MSZLinkedView *viewA;
 	IBOutlet MSZLinkedView *viewB;
 	IBOutlet MSZLinkedView *viewC;
+	
+	IBOutlet NSButton *trialButton;
 
 	NSMutableDictionary * userInfo;
 	CATransition *transition;	
@@ -35,6 +37,7 @@
 }
 
 @property BOOL isLicensed;
+@property (nonatomic, retain) 	IBOutlet NSButton *trialButton;
 @property (nonatomic, retain) NSMutableDictionary *userInfo;
 @property (retain) MSZLinkedView *currentView;
 
